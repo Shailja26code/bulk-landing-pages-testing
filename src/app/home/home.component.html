@@ -1,0 +1,14 @@
+<!-- home.component.html -->
+<div class="home-container">
+    <div class="main-content">
+      <h1>Welcome to the Home Page</h1>
+      <button (click)="toggleLocations()">{{ showLocations ? 'Hide' : 'Show' }} Locations</button>
+      <!-- Add other home page content here -->
+      <a routerLink="/locations">Go to Locations</a>
+    </div>
+    
+    <div class="location-dropdown" *ngIf="showLocations">
+      <app-location></app-location>
+      <router-outlet></router-outlet>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+<!-- src/app/location/location.component.html -->
+<div class="location-container">
+    <input [(ngModel)]="searchTerm" placeholder="Search locations...">
+    
+    <div *ngFor="let location of locations | filter:searchTerm" class="location-section">
+      <h3>{{ location.name }}</h3>
+      <p>{{ location.address }}</p>
+      <button (click)="onSelect(location.mapUrl)">View on Map</button>
+    </div>
+  </div>

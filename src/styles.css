@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.background-container {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* This ensures the background covers the full viewport height */
+  }

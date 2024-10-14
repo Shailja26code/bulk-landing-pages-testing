@@ -1,0 +1,47 @@
+<div class="background-container">
+  <div class="header-container">
+   <div class="logo-and-dropdown">
+     <div class="logo-container">
+       <img src="assets/images/Logo.png" alt="Company Logo" class="logo" width="150" height="50">
+     </div>
+<div class="dropdown-container">
+       <select [(ngModel)]="selectedLocation" (change)="onLocationChange()">
+       <option value="">Select a location</option>
+       <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+       </select>     
+      </div>
+   </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bulk Landing Pages</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Products" routerLinkActive="active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Customers" routerLinkActive="active">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Knowledge Hub" routerLinkActive="active">Knowledge Hub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Pricing" routerLinkActive="active">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/About" routerLinkActive="active">About</a>
+          </li>
+          <!-- Add more nav items as needed -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+ 

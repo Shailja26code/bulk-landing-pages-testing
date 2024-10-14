@@ -1,0 +1,16 @@
+/* home.component.css */
+.home-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .location-dropdown {
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+  }
